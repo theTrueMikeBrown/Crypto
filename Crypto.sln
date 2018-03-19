@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto", "Crypto\Crypto.csproj", "{F1271A9A-88E6-4CA8-BD1D-6A28C887511D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Display", "Display\Display.csproj", "{43CDCC4E-CF14-44CD-8D22-5F46FE1546DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F1271A9A-88E6-4CA8-BD1D-6A28C887511D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1271A9A-88E6-4CA8-BD1D-6A28C887511D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1271A9A-88E6-4CA8-BD1D-6A28C887511D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43CDCC4E-CF14-44CD-8D22-5F46FE1546DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43CDCC4E-CF14-44CD-8D22-5F46FE1546DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43CDCC4E-CF14-44CD-8D22-5F46FE1546DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43CDCC4E-CF14-44CD-8D22-5F46FE1546DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
