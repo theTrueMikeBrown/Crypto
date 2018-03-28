@@ -40,13 +40,20 @@ namespace Display
             var walletValues = new Dictionary<string, decimal>();
             foreach (var item in wallet)
             {
-                walletValues.Add(item.Key, values[item.Key].Item2 * item.Value);
-                sb.AppendLine($"{item.Key}: {item.Value}@${values[item.Key].Item2} = {walletValues[item.Key]}");
+                if (values.ContainsKey(item.Key))
+                {
+                    walletValues.Add(item.Key, values[item.Key].Item2 * item.Value);
+                    sb.AppendLine($"{item.Key}: {item.Value}@${values[item.Key].Item2} = {walletValues[item.Key]}");
+                }
+                else {
+                    sb.AppendLine($"ignoring {item.Key}");
+                }
             }
 
             var total = walletValues.Sum((v)=>v.Value);
 
-            sb.AppendLine($"Total Value of Wallet: {total}");
+            sb.AppendLine($"Total Value of Wallet: ${total}");
+            sb.AppendLine($"Total Value of Wallet in Doge: Ð{total/values["doge"].Item2}");
 
             foreach (var value in values)
             {
